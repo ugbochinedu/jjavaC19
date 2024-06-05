@@ -2,7 +2,7 @@
 // https://api.themoviedb.org/3/search/movie
 // https://image.tmdb.org/t/p/w500/1E5baAaEse26fej7uHcjOgEE2t2.jpg
 
-const API_KEY = "api_key=717ccf6765dcaa577801cadcc372f394";
+const API_KEY = "";
 const API_URL = "https://api.themoviedb.org/3"
 const MOVIE_URL = `${API_URL}/movie/popular?${API_KEY}`;
 const IMAGE_URL = "https://image.tmdb.org/t/p/w500";

@@ -15,7 +15,7 @@
 
 
 let arrayOfNumbers = [1,8,9,9,5,6,7];
-arrayOfNumbers.forEach()
+console.log(arrayOfNumbers.findIndex((number)=> number > 5));
 
 let answer = arrayOfNumbers.filter((number)=>{
     return number > 3;

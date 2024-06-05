@@ -21,15 +21,15 @@
 
 // // marketSearch(200)
 
-// // function multiply(x) {
-// //     function number(a){
-// //         return a * x;
-// //     }
-// //     return number;
-// // }
-// // const answer = multiply(2)
-// // console.log(answer(3))
-// // console.log(multiply(2)(4))
+function multiply(x) {
+    function number(a){
+        return a * x;
+    }
+    return number;
+}
+const answer = multiply(2)
+console.log(answer(3))
+console.log(multiply(2)(4))
 
 // function higherOrderFunction(callback) {
 //   console.log("Executing the higher-order function");
@@ -39,6 +39,17 @@
 // function callbackFunction() {
 //   console.log("Executing the callback function");
 // }
+
+// function me() {
+//   console.log("me");
+//   params();
+// }
+
+// function her() {
+//   console.log("her")
+// }
+
+// me(her);
 
 // higherOrderFunction(callbackFunction);
 
@@ -114,93 +125,93 @@
 // console.log(dog)
 
 
-let animal = {
-  type : "unknown",
-  sound : function () {
-    console.log("The " + this.type + " makes a sound")
-  }
-};
+// let animal = {
+//   type : "unknown",
+//   sound : function () {
+//     console.log("The " + this.type + " makes a sound")
+//   }
+// };
 
-let cat = Object.create(animal);
-cat.type = "cat";
-cat.sound();
+// let cat = Object.create(animal);
+// cat.type = "cat";
+// cat.sound();
 
-let dog = {};
-Object.setPrototypeOf(dog, animal);
-dog.type = "dog";
-dog.sound();
+// let dog = {};
+// Object.setPrototypeOf(dog, animal);
+// dog.type = "dog";
+// dog.sound();
 
-let tiger = {};
-tiger.__proto__ = animal;
-tiger.type = "tiger";
-console.log(tiger);
-
-
-
-function Person(name , age) {
-  this.name = name;
-  this.age = age;
-
-  this.sayHello = function(){
-    console.log(this.name + " just said hello")
-  }
-};
-
-let personOne = new Person("chinedu", 12);
-personOne.sayHello();
+// let tiger = {};
+// tiger.__proto__ = animal;
+// tiger.type = "tiger";
+// console.log(tiger);
 
 
 
-class Human {
-  constructor(name, age){
-    this.name = name;
-    this.age =  age;
-  }
+// function Person(name , age) {
+//   this.name = name;
+//   this.age = age;
 
-  sayHello(){
-    console.log(this.name + " said good morning")
-  };
+//   this.sayHello = function(){
+//     console.log(this.name + " just said hello")
+//   }
+// };
 
-  static greet(){
-    console.log("goodMorning")
-  };
-}
-
-let humanOne = new Human("chi", 23);
-console.log(humanOne);
-humanOne.age = 30;
-humanOne.name = "ucha";
-console.log(humanOne);
-humanOne.sayHello();
-Human.greet()
-
-function Person(name, age) {
-  this.name = name;
-  this.age = age;
-}
-
-Person.prototype.species = 'Human';
-
-var person1 = new Person('John', 30);
-var person2 = new Person('Alice', 25);
-
-console.log(person1.species); 
-console.log(person2.species); 
+// let personOne = new Person("chinedu", 12);
+// personOne.sayHello();
 
 
 
-function Person(name, age) {
-  this.name = name;
-  this.age = age;
+// class Human {
+//   constructor(name, age){
+//     this.name = name;
+//     this.age =  age;
+//   }
 
-  this.greet = function() {
-    console.log(`Hello, my name is ${this.name} and I'm ${this.age} years old.`);
-  };
-}
+//   sayHello(){
+//     console.log(this.name + " said good morning")
+//   };
 
-var person1 = new Person('John', 30);
-var person2 = new Person('Alice', 25);
+//   static greet(){
+//     console.log("goodMorning")
+//   };
+// }
 
-person1.greet(); 
-person2.greet(); 
+// let humanOne = new Human("chi", 23);
+// console.log(humanOne);
+// humanOne.age = 30;
+// humanOne.name = "ucha";
+// console.log(humanOne);
+// humanOne.sayHello();
+// Human.greet()
+
+// function Person(name, age) {
+//   this.name = name;
+//   this.age = age;
+// }
+
+// Person.prototype.species = 'Human';
+
+// var person1 = new Person('John', 30);
+// var person2 = new Person('Alice', 25);
+
+// console.log(person1.species); 
+// console.log(person2.species); 
+
+
+
+// function Person(name, age) {
+//   this.name = name;
+//   this.age = age;
+
+//   this.greet = function() {
+//     console.log(`Hello, my name is ${this.name} and I'm ${this.age} years old.`);
+//   };
+// }
+
+// var person1 = new Person('John', 30);
+// var person2 = new Person('Alice', 25);
+
+// person1.greet(); 
+// person2.greet(); 
 

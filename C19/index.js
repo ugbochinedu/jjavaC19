@@ -38,13 +38,34 @@
 
 // console.log(greetings("Good morning!")("John")); 
 
-let arr = [1,3,4,5,6];
-arr.shift();
-console.log(arr);
+// let arr = [1,3,4,5,6];
+// arr.shift();
+// console.log(arr);
 
-let array = [
-  ["car", 1500],
-  ["cap", 2500],
-  ["cat", 3500],
-];
-console.log(array[0][0]);
+// let array = [
+//   ["car", 1500],
+//   ["cap", 2500],
+//   ["cat", 3500],
+// ];
+// console.log(array[0][0]);
+
+function calc(x) {
+  function secondNumber(y) {
+    return x * y;
+  }
+  return secondNumber;
+}
+
+console.log(calc(2)(3))
+
+
+
+function higherOrderFunction(callBack) {
+  console.log("I am a higher function");
+  callBack();
+}
+
+higherOrderFunction(function lowerFunction() {
+  console.log("I am a lower function");
+  
+});

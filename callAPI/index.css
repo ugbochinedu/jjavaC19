@@ -1,0 +1,40 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.movieInnerContainer img{
+    width: 400px;
+}
+
+.movieInnerContainer{
+    width: 400px;
+     margin: auto;
+}
+
+#movieDetails{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 20px;
+    /* flex-wrap: wrap; */
+}
+
+#form{
+    display: flex;
+    justify-content: center;
+}
+
+#form input{
+    width: 500px;
+    height: 40px;
+    margin: 20px 0px;
+    padding-left: 10px;
+}
+
+.movieInfo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
